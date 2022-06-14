@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "454368101681",
+    "project_id": "eksamensopgave-7974a",
+    "storage_bucket": "eksamensopgave-7974a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454368101681:android:cffc971ed8ba2618c3dc10",
+        "android_client_info": {
+          "package_name": "com.example.eksamens_opgave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454368101681-ic3uak1m3e9n3o963c5ucrof5r2r86ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvMlHcuvM87uT91XEbHqCFiZA0pzQCnIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454368101681-ic3uak1m3e9n3o963c5ucrof5r2r86ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454368101681:android:fe34b008722a6982c3dc10",
+        "android_client_info": {
+          "package_name": "com.waenglund.eksamensOpgave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454368101681-ic3uak1m3e9n3o963c5ucrof5r2r86ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvMlHcuvM87uT91XEbHqCFiZA0pzQCnIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454368101681-ic3uak1m3e9n3o963c5ucrof5r2r86ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
