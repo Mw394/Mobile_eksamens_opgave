@@ -32,4 +32,31 @@ class FirebaseService {
         .then((value) => print("Account deleted"))
         .catchError((error) => print("Failed to delete account: $error"));
   }
+
+  updateAccount(Account account, String newAccountName) async {
+    await accountRef
+        .doc(account.iban)
+        .update({"name": newAccountName}).then((_) => print("Updated"));
+  }
+
+  printWhatsChanged() {
+    FirebaseFirestore.instance
+        .collection("Accounts")
+        .snapshots()
+        .listen((result) {
+      result.docChanges.forEach((element) {
+        var documentType = element.type;
+        if (documentType == DocumentChangeType.added) {
+          print("Object added");
+          print(element.doc.data());
+        } else if (documentType == DocumentChangeType.modified) {
+          print("Object modified");
+          print(element.doc.data());
+        } else if (documentType == DocumentChangeType.removed) {
+          print("Object removed");
+          print(element.doc.data());
+        }
+      });
+    });
+  }
 }
