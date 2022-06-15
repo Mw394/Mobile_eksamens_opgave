@@ -1,5 +1,6 @@
 import 'package:eksamens_opgave/model/account.dart';
 import 'package:eksamens_opgave/model/transaction.dart';
+import 'package:eksamens_opgave/model/transactionRouteArugments.dart';
 import 'package:eksamens_opgave/services/account_service.dart';
 import 'package:eksamens_opgave/view/create_account_transaction.dart';
 import 'package:eksamens_opgave/view/transaction_row.dart';
@@ -28,13 +29,16 @@ class _TransactionListState extends State<TransactionList> {
         actions: <Widget>[
           FloatingActionButton.extended(
               label: const Text("New Transaction"),
-              onPressed: () => {
+              onPressed: () async => {
+                    Navigator.pushNamed(context, "/newTransaction",
+                        arguments: TransactionRouteArguments(account: account))
+                    /*
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => CreateTransactionForm(
                                   account: account,
-                                )))
+                                )))*/
                   })
         ],
       ),
